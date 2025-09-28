@@ -1,18 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>🏆 Коллекция сертификатов</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Мои сертификаты:</h1>
-    <img src="kodland_HTML_CSS.jpg" alt="">
-    <img src="robototehnik.jpg" alt="">
-    <img src="Scratch.jpg" alt="">
-    <img src="Stepik_HTML_CSS.jpg" alt="">
-    <img src="clarinet_srb.jpg" alt="">
-    <img src="clarinet_srb_1.jpg" alt="">
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">🏆 Мои достижения</h1>
+            <p class="hero-subtitle">Коллекция сертификатов о пройденных курсах и полученных навыках</p>
+        </div>
+        <div class="hero-bg"></div>
+    </header>
+
+    <main class="certificates-container">
+        <section class="category-section programming-section">
+            <div class="section-header">
+                <h2 class="section-title programming-title">💻 Программирование</h2>
+                <div class="section-divider programming-divider"></div>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-card" data-category="programming">
+                    <div class="card-image">
+                        <img src="assets/kodland_JS.jpg" alt="Сертификат по JavaScript от Kodland" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="view-btn">👀 Посмотреть</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>JavaScript Fundamentals</h3>
+                        <p>Kodland</p>
+                        <span class="category-tag programming">Программирование</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card" data-category="programming">
+                    <div class="card-image">
+                        <img src="assets/kodland_HTML_CSS.jpg" alt="Сертификат по HTML/CSS от Kodland" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="view-btn">👀 Посмотреть</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>HTML & CSS</h3>
+                        <p>Kodland</p>
+                        <span class="category-tag programming">Веб-разработка</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card" data-category="programming">
+                    <div class="card-image">
+                        <img src="assets/robototehnik.jpg" alt="Сертификат по робототехнике" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="view-btn">👀 Посмотреть</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Робототехника</h3>
+                        <p>Azimov</p>
+                        <span class="category-tag programming">Программирование</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card" data-category="programming">
+                    <div class="card-image">
+                        <img src="assets/Scratch.jpg" alt="Сертификат по Scratch" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="view-btn">👀 Посмотреть</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Scratch Programming</h3>
+                        <p>Azimov</p>
+                        <span class="category-tag programming">Программирование</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card" data-category="programming">
+                    <div class="card-image">
+                        <img src="assets/Stepik_HTML_CSS.jpg" alt="Сертификат по HTML/CSS от Stepik" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="view-btn">👀 Посмотреть</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>HTML/CSS Advanced</h3>
+                        <p>Stepik</p>
+                        <span class="category-tag programming">Веб-разработка</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="category-section music-section">
+            <div class="section-header">
+                <h2 class="section-title music-title">🎵 Музыка</h2>
+                <div class="section-divider music-divider"></div>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-card" data-category="music">
+                    <div class="card-image">
+                        <img src="assets/clarinet_srb.jpg" alt="Сертификат по кларнету" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="view-btn">👀 Посмотреть</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Кларнет</h3>
+                        <p>SIRMIUM</p>
+                        <span class="category-tag music">Музыка</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card" data-category="music">
+                    <div class="card-image">
+                        <img src="assets/clarinet_srb_1.jpg" alt="Дополнительный сертификат по кларнету" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="view-btn">👀 Посмотреть</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Кларнет</h3>
+                        <p>Ми Фа Соль</p>
+                        <span class="category-tag music">Музыка</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card" data-category="music">
+                    <div class="card-image">
+                        <img src="assets/pianino_SIRMIUM.jpg" alt="Сертификат по фортепиано от SIRMIUM" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="view-btn">👀 Посмотреть</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Фортепиано</h3>
+                        <p>SIRMIUM</p>
+                        <span class="category-tag music">Музыка</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-image" src="" alt="">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>✨ Постоянно развиваюсь и получаю новые знания</p>
+    </footer>
+
+    <script>
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modal-image');
+        const closeBtn = document.querySelector('.close');
+        const viewBtns = document.querySelectorAll('.view-btn');
+
+        viewBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const img = e.target.closest('.certificate-card').querySelector('img');
+                modal.style.display = 'flex';
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.certificate-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+            observer.observe(card);
+        });
+    </script>
 </body>
 </html>
